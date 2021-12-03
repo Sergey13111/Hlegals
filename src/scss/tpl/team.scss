@@ -1,0 +1,215 @@
+@import "../vars";
+
+.team-wrapper {
+    padding: 20px 0;
+    justify-content: center;
+
+    .team-title {
+        max-width: 895px;
+
+        h2 {
+            margin-bottom: 80px;
+            margin-top: 0;
+        }
+    }
+
+    .team-items-wrapper {
+        margin: 0 -15px;
+
+        .team-item {
+            margin-bottom: 40px;
+
+            .team-image {
+                margin-bottom: 20px;
+            }
+
+            .team-inner {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .team-name-wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    max-width: 260px;
+                    
+                    a {
+                        text-decoration: none;
+                        cursor: pointer;
+                        max-width: 100%;
+                    
+                        strong {
+                            font-size: $base-font-size;
+                            line-height: 21px;
+                            font-weight: 400;
+                            color: #323264;
+                            margin-bottom: 5px;
+
+                            &:hover {
+                            color: $red-color;
+                            }
+                        } 
+                    }
+
+                    span {
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #B3B3BA;
+                    }
+                }
+
+                .team-link {
+                    border-radius: 50%;
+                    background: #F5F5FA;
+                    width: 32px;
+                    height: 32px;
+                    position: relative;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: #EDEDF7;
+                    }
+
+                    a {
+                        position: absolute;
+                        text-decoration: none;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: #24A3FF;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .team-wrapper {
+        padding: 20px;
+
+        .team-items-wrapper {
+            .team-item {
+                display: flex;  
+
+                &.column-three {
+                    width: 50%;
+
+                    .team-image {
+                        img {
+                            max-width: 158px;
+                        }
+                    }
+
+                    .team-inner {
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: flex-start;
+                        padding: 20px;
+
+                        .team-name-wrapper {
+                            span {
+                                margin: 5px 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .team-wrapper {
+        .team-title {
+            h2 {
+                font-size: 32px;
+                line-height: 38px;
+            }
+        }
+
+        .team-items-wrapper {
+            .team-item {
+                .team-inner {
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: normal;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .team-wrapper {
+        &.container {
+            width: 750px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .team-wrapper {
+        &.container {
+            max-width: 680px;
+            width: 100%;
+            
+            .team-items-wrapper {
+                .team-item {
+                    &.column-three {
+                        width: 100%;
+                    }
+                }
+            }  
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .team-wrapper {
+        &.container {
+            .team-title {
+                h2 {
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .team-items-wrapper {
+                .team-item {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .team-wrapper {
+        &.container {
+
+            .team-items-wrapper {
+                .team-item {
+                    margin-bottom: 20px;
+
+                    &.column-three {
+                        .team-image {
+                            img {
+                                max-width: 100px;
+                            }
+                        }
+
+                        .team-inner {
+                            padding: 10px 0 10px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

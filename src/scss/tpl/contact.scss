@@ -1,0 +1,126 @@
+@import "../vars";
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    .contact-information {
+        align-content: center;
+        max-width: 412px;
+
+        span {
+            font-size: 21px;
+            display: inline-block;
+            line-height: 30px;
+            color: #323264;
+            max-width: 210px;
+            margin-bottom: 20px;
+        }
+
+        .border-top-bottom {
+            border-top: 4px solid #E6E6F0;
+            border-bottom: 4px solid #E6E6F0;
+            padding: 40px 219px 40px 0;
+            margin-bottom: 25px;
+
+            .tel {
+                font-size: 21px;
+                line-height: 30px;
+                color: #46466E;
+                margin-bottom: 20px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .email {
+                font-size: 21px;
+                line-height: 30px;
+                color: #24A3FF;
+                text-decoration: none;
+                cursor: pointer;
+
+                &:hover {
+                    color: $red-color;
+                }
+            }
+            
+        }
+
+        .facebook {
+            display: block;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #24A3FF;
+            text-decoration: none;
+            cursor: pointer;
+
+            .link-span {
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #24A3FF;
+                margin: 0 0 0 10px;
+                max-width: 120px;
+
+                &:hover {
+                    color: $red-color;
+                }
+            }
+
+            &:hover path {
+                fill: $red-color;
+            }
+        }
+    }
+    
+    .google-maps {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1280px) { 
+    .container-small {
+        .contact-wrapper {
+            padding: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+    .contact-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+        
+
+        .contact-information {
+            margin-bottom: 40px;
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    .container-small {
+        max-width: 300px;
+        .contact-wrapper {
+            .contact-information {
+                .border-top-bottom {
+                    padding: 20px 0;
+                    width: 100%;
+
+                    .tel {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

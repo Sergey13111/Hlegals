@@ -1,0 +1,200 @@
+@import "../vars";
+
+.publication-entry-wrapper {
+    padding: 20px 93px 60px;
+
+    .img-bg-publication {
+        margin-bottom: 40px;
+
+        img {
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+
+    .darc-h {
+        font-size: 32px;
+        line-height: 38px;
+        color: #323264;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        max-width: 866px;
+    }
+
+    span {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #B3B3BA;
+        display: inline-block;
+        min-width: 100%;
+        border-bottom: 4px solid #EDEDF7;
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: $base-font-size;
+        line-height: 26px;
+        color: $black-color;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        max-width: 866px;
+    }
+
+    h2 {
+        margin: 40px 0;
+        max-width: 906px;
+    }
+
+    ol {
+        list-style: auto;
+        margin-left: 25px;
+
+        li {
+            color: $red-color;
+            font-size: $base-font-size;
+
+            p {
+                font-size: $base-font-size;
+                line-height: 26px;
+                color: $black-color;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .img-ad-personalization-window {
+        margin: 40px 0 15px;
+
+        img {
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    .par-min {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #B3B3BA;
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
+
+    .icon-social {
+        display: flex;
+        border-top: 4px solid #E6E6F0;
+        padding-top: 20px;
+        margin-top: 40px;
+
+        a {
+            background: #F5F5FA;
+            border-radius: 12px;
+            position: relative;
+            width: 42px;
+            height: 42px;
+            margin-right: 19px;
+
+            &.fb {
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    background: url("../../img/img_icon_soc_fb.svg") no-repeat center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            &.tm {
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    background: url('../../img/img_icon_soc_tm.svg') no-repeat center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            &.in {
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    background: url('../../img/img_icon_soc_in.svg') no-repeat center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+
+        }
+
+
+    }
+}
+
+.bg-publlications {
+    &.border-radius {
+        border-radius: 12px 12px 0 0;
+        .publications-wrapper {
+            .publication-content-inner {
+                display: flex; 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .publication-entry-wrapper {
+        .darc-h {
+            font-size: 23px;
+            line-height: 26px;
+        }
+
+        h2 {
+            font-size: 32px;
+        }    
+    }  
+}
+
+@media screen and (max-width: 768px) { 
+    .publication-entry-wrapper {
+        &.container-small {
+            max-width: 680px;
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    .publication-entry-wrapper {
+        &.container-small {
+            .darc-h {
+                margin-top: 20px;
+            }
+
+            span {
+                padding-bottom: 20px;
+            }
+
+            h2 {
+                line-height: 28px;
+                font-size: 24px;
+                margin: 20px 0;
+            }
+        }
+    }
+}

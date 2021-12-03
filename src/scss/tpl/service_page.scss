@@ -1,0 +1,190 @@
+@import "../vars";
+
+.header-service-page {
+    background: url('../img/img_bg_servicepage_top.jpg') no-repeat center;
+    background-size: cover;
+    height: auto;
+
+    .service-page-header-title {
+        flex-direction: column;
+        align-content: center;
+        margin-top: 50px;
+
+        &-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            font-size: 21px;
+            line-height: 30px;
+            color: $white-color;
+            max-width: 861px;
+            text-align: center;
+            text-indent: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .btn-blue {
+            margin-top: 20px;
+            align-self: center;
+            max-height: 50px;
+        }
+    }
+
+    .modal-window-wrapper {
+        .form {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    }
+}
+
+.referral-services-wrapper {
+    background: url('../img/img_bg_slider.jpg') no-repeat center;
+    background-size: cover; 
+    position: relative; 
+
+    .container {
+        max-width: 1092px;
+        border-top: 4px solid rgba(255, 255, 255, 50%);
+        padding: 20px 0 80px;
+
+        &::after {
+            content: '';
+            height: 10px;
+            width: calc(100% - 40px);
+            display: block;
+            background: #CACADB;
+            border-radius: 0px 0px 12px 12px;
+            position: absolute;
+            bottom: -10px;
+            left: 20px;
+        }
+    
+        &:before {
+            content: '';
+            height: 10px;
+            width: calc(100% - 80px);
+            display: block;
+            background: #E7E7F2;
+            border-radius: 0px 0px 12px 12px;
+            position: absolute;
+            bottom: -20px;
+            left: 40px;
+        }
+    
+        h3 {
+            color: $white-color;
+            margin-bottom: 20px;
+        }
+
+        .referral-services-list {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 -25px;
+
+            .col-2 {
+                width: 50%;
+                padding: 0 25px;
+
+                .list {
+                    li {
+                        position: relative;
+                        font-size: $base-font-size;
+                        color: $white-color;
+                        line-height: 26px;
+                        margin-bottom: 15px;
+                        margin-left: 8px;
+                        padding-left: 14px;
+
+                        :before {
+                            position: absolute;
+                            content: '';
+                            width: 6px;
+                            height: 6px;
+                            background: $red-color;
+                            border-radius: 50%;
+                            display: block;
+                            top: 11px;
+                            left: 0;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+    .referral-services-wrapper {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-page-header-title {
+        .service-page-header-title-top {
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-service-page {
+        p {
+            text-align: left;
+        }
+
+        .service-page-header-title {
+            &.container {
+                max-width: 650px;
+                padding: 20px 0;
+                margin: 0;
+            }
+            
+        }
+    }
+
+    .referral-services-wrapper {
+        .container {
+            padding-bottom: 0;
+            
+            .referral-services-list {
+                flex-wrap: wrap;
+
+                .col-2 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .header-service-page {
+        .service-page-header-title {
+            &.container {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .header-service-page {
+        .modal-window-wrapper {
+            vertical-align: top;
+        }
+    }
+}
