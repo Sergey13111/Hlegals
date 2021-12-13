@@ -181,6 +181,11 @@
                         background: #24A3FF;
                         opacity: 0.2;
 
+                        &::before {
+                            width: 16px;
+                            height: 16px;
+                        }
+
                         &:hover {
                            opacity: 0.6; 
                         }  

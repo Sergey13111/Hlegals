@@ -90,6 +90,12 @@
         align-items: center;
 
         .logo {
+            padding-right: 40px;
+
+            &.padding-right-none {
+                padding-right: 0;
+            }
+
             span {
                 font-size: 38px;
                 color: $white-color;
@@ -429,7 +435,6 @@
             &.container {
                 .logo {
                     margin-bottom: 15px;
-                    margin-right: 40px;
                 }
 
                 .header-right-wrapper {

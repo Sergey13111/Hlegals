@@ -95,6 +95,7 @@ h4 {
     padding: 17px 39px;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
 
     &:hover {
         background: #0085FF;
@@ -260,6 +261,12 @@ h4 {
     }
 }
 
+.trust-us-wrapper {
+    strong {
+        padding: 0 20px;
+    }
+}
+
 .modal-window-wrapper {
     background: #F5F5FA;
     border-radius: 12px;
@@ -340,6 +347,7 @@ h4 {
             line-height: 26px;
             color: #B3B3BA;
             padding: 10px;
+            resize: none;
 
             &::placeholder {
                 font-size: $base-font-size;
@@ -752,7 +760,6 @@ h4 {
     }
 
     .modal-window-wrapper {
-        border-radius: 0;
         height: 100%;
     }
 
